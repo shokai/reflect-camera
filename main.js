@@ -3,7 +3,7 @@ window.URL = window.URL || window.webkitURL ;
 
 function initialize() {
   navigator.getUserMedia(
-	{audio: true, video: true},
+	{audio: false, video: true},
 	function(stream) {
 	  var video = document.getElementById('video');
 	  video.src = URL.createObjectURL(stream);
